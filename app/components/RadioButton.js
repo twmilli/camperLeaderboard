@@ -10,4 +10,11 @@ var RadioButton = function(props){
   )
 }
 
+RadioButton.PropTypes = {
+  val: PropTypes.string.isRequired,
+  option: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  onRadioChange: PropTypes.func.isRequired
+}
+
 module.exports = RadioButton;

@@ -46,7 +46,9 @@ var LeaderBoardContainer = React.createClass({
 
   render: function(){
     return(
+      <div>
       <table>
+        <caption>FreeCodeCamp Leader Board</caption>
         <thead>
           <tr className="leader-board-heading">
             <th>#</th>
@@ -55,7 +57,8 @@ var LeaderBoardContainer = React.createClass({
               option = {this.state.option}
               val="recent"
               text="Points in last 30 days"/>
-              <RadioButton onRadioChange = {this.handleRadioChange}
+              <RadioButton
+                onRadioChange = {this.handleRadioChange}
                 option = {this.state.option}
                 val="alltime"
               text="All Time Points"/>
@@ -63,6 +66,9 @@ var LeaderBoardContainer = React.createClass({
         </thead>
         <LeaderBoard campers={this.state.campers}/>
       </table>
+      <br/><br/><br/><br/><br/>
+      <span className="footer">Coded By Taylor Milliman</span>
+      </div>
     )
   }
 });

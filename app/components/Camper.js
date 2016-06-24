@@ -20,8 +20,7 @@ var Camper = function(props){
   </tr>
 
 )
-};
-
+}
 Camper.PropTypes={
   num: PropTypes.number.isRequired,
   img: PropTypes.string.isRequired,
