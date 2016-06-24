@@ -5655,7 +5655,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(2);
-
+	var PropTypes = React.PropTypes;
 	var RadioButton = function (props) {
 	  return React.createElement(
 	    "th",

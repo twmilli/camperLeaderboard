@@ -1,5 +1,5 @@
 var React = require('react');
-
+var PropTypes = React.PropTypes;
 var RadioButton = function(props){
   return(
     <th className="radio">
